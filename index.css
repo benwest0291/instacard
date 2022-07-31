@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contanier{
+display: flex;
+justify-content: center;
+}
+
+.insta-img{
+  width: 145px;
+  margin-left: 8px;
+}
+
+.card__top{
+  border-bottom:solid 1px grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insta__card{
+  margin-top: 20px;
+  width: 400px;
+  height: 760px;
+  border: solid 4px #000;
+  border-radius: 15px 15px;
+}
+
+.avatar{
+width: 50px;
+border-radius: 50%;
+margin: 15px;
+}
+
+.card__section{
+  margin-top: 25px;
+  display: flex;
+}
+
+.main__img{
+  width: 400px;
+  height: 400px;
+}
+
+.icon{
+width: 30px;
+margin-right: 5px;
+}
+
+.icon__section{
+  display: flex;
+  padding: 0 !important;
+  margin-left: 20px;
+}
+
+#like_btn{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 20px;
+  margin-bottom: 0 !important;
+}
+
+.spacing{
+  margin-left: 20px;}
+
+#love_heart{
+  font-size: 30px;
+}
+
+ul{
+  list-style: none;
+}
+
+.lower_icon__section{
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-heart:hover{
+  color: red;
+  fill: red;
+}
