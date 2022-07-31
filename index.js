@@ -53,7 +53,7 @@ function renderCardContent(data) {
                   <p class="spacing"><strong>${username}</strong> ${comment}</p>
             </div>`
 }
-renderCardContent(ben);
+renderCardContent(person);
 
 const loveHeart = document.getElementById("love_heart");
 const likeBtn = document.getElementById("like_btn");

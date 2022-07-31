@@ -22,7 +22,7 @@ justify-content: center;
 }
 
 #insta__card{
-  margin-top: 20px;
+  margin-top: 10px;
   width: 400px;
   height: 760px;
   border: solid 4px #000;
@@ -36,7 +36,7 @@ margin: 15px;
 }
 
 .card__section{
-  margin-top: 25px;
+  margin-top: 15px;
   display: flex;
 }
 
