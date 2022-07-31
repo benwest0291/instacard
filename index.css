@@ -21,7 +21,7 @@ justify-content: center;
   justify-content: space-between;
 }
 
-.insta__card{
+#insta__card{
   margin-top: 20px;
   width: 400px;
   height: 760px;
@@ -82,4 +82,12 @@ ul{
 .fa-heart:hover{
   color: red;
   fill: red;
+}
+
+.red{
+  color: red;
+}
+
+.hide{
+  display: none;
 }
