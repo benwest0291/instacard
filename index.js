@@ -59,7 +59,6 @@ const loveHeart = document.getElementById("love_heart");
 const likeBtn = document.getElementById("like_btn");
 const heart = document.querySelector(".fa-heart");
 
-
 let loveCounter = 0;
 
 loveHeart.addEventListener("click", function () {
@@ -68,7 +67,6 @@ loveHeart.addEventListener("click", function () {
   likeBtn.textContent = loveCounter + " " + "likes";
   heart.classList.add('red');
 });
-
 
 loveHeart.addEventListener("dblclick", function () {
   console.log("double clicked");
