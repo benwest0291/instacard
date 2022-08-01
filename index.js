@@ -16,7 +16,17 @@
         post: "images/me.png",
         comment: "Hey good lookings",
         likes: 21
-   }
+      }
+
+        const joseph= {
+        name: "Joseph Ducreux",
+        username: "jd1735",
+        location: "Paris, France",
+        avatar: "images/avatar-ducreux.jpg",
+        post: "images/post-ducreux.jpg",
+        comment: "Bonjoir i am french!",
+        likes: 152
+    }
 
 function renderCardContent(data) {
   const { name, location, avatar, post, username, comment} = data;
@@ -51,21 +61,35 @@ function renderCardContent(data) {
                   <p id="like_btn"></p>
               </div>
                   <p class="spacing"><strong>${username}</strong> ${comment}</p>
-            </div>`
+            </div>
+            <div class="flick__buttons">
+           <button class="change__post__btn">Change post</button>
+          </div>`
 }
 renderCardContent(person);
 
 const loveHeart = document.getElementById("love_heart");
 const likeBtn = document.getElementById("like_btn");
 const heart = document.querySelector(".fa-heart");
+const left = document.getElementById("left");
+const changeBtn = document.querySelector(".change__post__btn");
+const cardBody = document.getElementById("insta__card");
+
+
+
+changeBtn.addEventListener("click", function () {
+  renderCardContent(joseph);
+  cardBody.classList.remove('card__height');
+})
 
 let loveCounter = 0;
 
-loveHeart.addEventListener("click", function () {
+loveHeart.addEventListener("click", function (){
   console.log("clicked");
   loveCounter += 1;
   likeBtn.textContent = loveCounter + " " + "likes";
   heart.classList.add('red');
+  cardBody.classList.add('card__height');
 });
 
 loveHeart.addEventListener("dblclick", function () {
@@ -73,4 +97,5 @@ loveHeart.addEventListener("dblclick", function () {
   loveCounter = 0;
   heart.classList.remove('red');
   likeBtn.classList.add('hide');
+  cardBody.classList.remove('card__height');
 });

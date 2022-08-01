@@ -23,14 +23,14 @@ justify-content: center;
 
 #insta__card{
   margin-top: 10px;
-  width: 400px;
+  width: 399px;
   height: 760px;
   border: solid 4px #000;
   border-radius: 15px 15px;
 }
 
 .avatar{
-width: 50px;
+width: 45px;
 border-radius: 50%;
 margin: 15px;
 }
@@ -57,10 +57,11 @@ margin-right: 5px;
 }
 
 #like_btn{
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bolder;
   margin-left: 20px;
   margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 
 .spacing{
@@ -90,4 +91,26 @@ ul{
 
 .hide{
   display: none;
+}
+
+.flick__buttons{
+  border-top: 2px solid #fff;
+  border-top: solid 1px grey;
+  height: 68px;
+  background-color: #000;
+  border-radius:  0 0 10px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.change__post__btn{
+background-color: #000;
+color: #fff;
+border-color: #000;
+}
+
+
+.card__height{
+    height: 780px !important;
 }
